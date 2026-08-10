@@ -7,3 +7,4 @@ matplotlib==3.11.1
 seaborn==0.13.2
 numpy==2.5.1
 pre-commit==4.6.1
+geopandas==1.1.4
