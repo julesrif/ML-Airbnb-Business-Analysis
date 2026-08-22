@@ -4,3 +4,8 @@ temp/*
 .venv/*
 venv/*
 dataset/*
+
+# Generated visualisation outputs
+visualisations/*.png
+visualisations/*.csv
+visualisations/*.json
