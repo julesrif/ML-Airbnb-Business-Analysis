@@ -9,3 +9,8 @@ dataset/*
 visualisations/*.png
 visualisations/*.csv
 visualisations/*.json
+
+# Generated report-ready visualisation pack
+report_visualisations/*.png
+report_visualisations/*.json
+report_visualisations/*.md
