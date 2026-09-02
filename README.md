@@ -90,6 +90,11 @@ listing time (review-derived columns excluded to preserve the cold-start framing
 neighbourhood to map where the model is least reliable, i.e. where unobserved listing quality
 (not location) is driving price.
 
+### 10. Report Visualisations
+Five final notebook cells create and save the report's model-comparison, feature-importance,
+cluster-distribution, listing-density and neighbourhood-uncertainty figures under
+report_visualisations/.
+
 ---
 
 ## Evaluation Metrics
