@@ -68,6 +68,11 @@ Comprehensive model evaluation using `GridSearchCV` to compare Decision Trees, R
 ### 9. Model Evaluation & Spatial Diagnostics
 5-fold out-of-fold cross-validated predictions, aggregated into mean absolute error per neighbourhood to map where the model is least reliable, i.e. where unobserved listing quality (not location) is driving price.
 
+### 10. Report Visualisations
+Five final notebook cells create and save the report's model-comparison, feature-importance,
+cluster-distribution, listing-density and neighbourhood-uncertainty figures under
+report_visualisations/.
+
 ---
 
 ## Evaluation Metrics
