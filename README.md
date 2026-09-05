@@ -6,7 +6,7 @@
 
 **Team:** Team Lorem Ipsum (Group 2)
 
-A spatial pricing and market-segmentation analysis of NYC Airbnb listings, built for **Track 1 (Classical ML: Regression & Clustering)** of the Development Team Project. The project develops a cold-start Automated Valuation Model (AVM) that prices new listings from spatial features alone, benchmarks it against a non-ML baseline, and uses K-Means clustering to identify the market segments where that pricing is least reliable.
+A spatial pricing and market-segmentation analysis of NYC Airbnb listings, built for **Track 1 (Classical ML: Regression & Clustering)** of the Development Team Project. The project develops a cold-start Automated Valuation Model (AVM) that prices new listings from multiple features, benchmarks it against a non-ML baseline, and uses K-Means clustering to identify the market segments where that pricing is least reliable.
 
 ---
 
@@ -20,7 +20,7 @@ This is the practical development deliverable supporting the team's 1,000-word a
 
 > How can we develop an Automated Valuation Model (AVM) to provide a cold-start asking price for new Airbnb listings based on their features, and which geographic segments present the highest pricing volatility?
 
-"Cold-start" here means the model only uses information available before a listing has any booking history: location, room type, and host-set fields such as minimum nights, not accumulated signals like review counts.
+"Cold-start" here means the model only uses information available before a listing has any booking history: location, room type, and host-set fields such as minimum nights.
 
 ---
 
@@ -63,7 +63,7 @@ Nearest-subway and nearest-POI distance, computed once via haversine BallTree an
 K-Means over scaled price, demand, host-activity, availability and proximity features. Cluster count (k=3) selected via the Elbow Method and silhouette score; clusters are profiled by price, room type mix, borough mix, and visualised both in PCA space and geographically.
 
 ### 8. Predictive Modelling
-Comprehensive model evaluation using `GridSearchCV` to compare Decision Trees, Random Forests, and Gradient Boosting regressors. The best-performing model is selected based on RMSE (converted back to USD), using only spatial/structural features available at listing time to preserve the cold-start framing.
+Comprehensive model evaluation using `GridSearchCV` to compare Decision Trees, Random Forests, and Gradient Boosting regressors. The best-performing model is selected based on RMSE (converted back to USD), using features available at listing time to preserve the cold-start framing.
 
 ### 9. Model Evaluation & Spatial Diagnostics
 5-fold out-of-fold cross-validated predictions, aggregated into mean absolute error per neighbourhood to map where the model is least reliable, i.e. where unobserved listing quality (not location) is driving price.
