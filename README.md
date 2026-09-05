@@ -18,7 +18,7 @@ This is the practical development deliverable supporting the team's 1,000-word a
 
 ## Business Question
 
-> How can we develop an Automated Valuation Model (AVM) to provide a cold-start asking price for new Airbnb listings based on their features, and which geographic segments present the highest pricing volatility?
+> How can an Automated Valuation Model (AVM) use listing, host, review and spatial features to predict Airbnb asking prices in New York City, and which geographic areas show the greatest pricing uncertainty?
 
 "Cold-start" here means the model only uses information available before a listing has any booking history: location, room type, and host-set fields such as minimum nights.
 
